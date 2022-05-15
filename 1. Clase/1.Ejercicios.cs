@@ -32,3 +32,39 @@ else
 {
     Console.WriteLine("No ingresa a la fiesta");
 }
+
+//2. Solucion condicionales anidadas
+Console.WriteLine("Ingresa año nacimiento: ");
+int anio = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresa mes nacimiento: ");
+int mes = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresa dia de nacimiento: ");
+int dia = int.Parse(Console.ReadLine());
+int edad = 2022 - anio;
+if (mes>5)
+{
+   edad= edad-1;
+}
+else
+{
+    if (mes==5)
+    {
+        if (dia>7)
+        {
+            edad = edad - 1;
+        }
+        if (dia == 7)
+        {
+            Console.WriteLine("¡Feliz cumpleaños!");
+        }
+    }
+}
+Console.WriteLine("Tu edad es "+ edad);
+if (edad>=18)
+{
+    Console.WriteLine("Ingresa a la fiesta");
+}
+else
+{
+    Console.WriteLine("No ingresa a la fiesta");
+}
