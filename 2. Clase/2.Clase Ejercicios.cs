@@ -176,7 +176,7 @@ while (usuario != usuarioIngresado || contrasenia != contraseniaIngresada)
 
 Console.WriteLine("Ingresa numero de personas: ");
 int numero=int.Parse(Console.ReadLine());
-for (int i = 0; i < numero; i++)
+for (int i = 0; i < numero; i+=2)
 {
     Console.WriteLine("Persona numero " + (i + 1));
     Console.WriteLine("Ingresa año nacimiento: ");
